@@ -8,7 +8,7 @@ from kivy.uix.label import Label
 class myApp(App):
     def build(self):
         root_widget = BoxLayout(orientation="vertical")
-        output_label = Label(size_hint_y=0.75, font_size=50)
+        output_label = Label(size_hint_y=2, font_size=50)
         button_symbols = (
             "1",
             "2",
@@ -27,7 +27,7 @@ class myApp(App):
             "/",
             "=",
         )
-        button_grid = GridLayout(cols=4, size_hint_y=2)
+        button_grid = GridLayout(cols=4, size_hint_y=5)
         for symbol in button_symbols:
             button_grid.add_widget(Button(text=symbol))
 
